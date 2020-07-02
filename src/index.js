@@ -21,6 +21,21 @@ const Project = (name) => {
 
     return {getName, setName, addTodo};
 };
+const projects = [];
 
+function addProject(){
+    const title = prompt("Enter the name of the project.");
 
+    const proj = Project(title);
+    projects.push(proj);
 
+    const projectList = document.querySelector('.projects');
+    const projectItem = document.createElement('div');
+    projectItem.innerText = title;
+
+    projectList.appendChild(projectItem);
+}
+
+const add = document.querySelector("#add");
+
+add.addEventListener('click',addProject);
