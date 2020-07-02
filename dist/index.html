@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head><title>todo</title></head>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
     <body>
+        <div class="header"><h1>Todo List</h1></div>
+        <div id="container">
+            <div class="column left">
+                <div class="list">
+                    <h2>Project List</h2>
+                    <button id="add">Add</button>
+                </div>
+                <div class="projects">
+                    <div>first</div>
+                    <div>second</div>
+                    <div>third</div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="list">
+                    <h2>List of Todos</h2>
+                    <button id="addTodo">Add todo</button>
+                </div>
+                <div class="todos">
+                    <div>title</div>
+                    <div>title</div>
+
+                </div>
+            </div>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
